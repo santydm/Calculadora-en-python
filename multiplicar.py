@@ -1,8 +1,9 @@
-def resta():
+def multiplicacion():
+    
     print("*" * 50)
-    print("Se encuentra en la seccion de resta")
+    print("Se encuentra en la seccion de multiplicacion")
     print("*" * 50)
-    print("\nPara salir de la resta, escriba 'fin'")
+    print("\nPara salir de la multiplicacion, escriba 'fin'")
     lista = []
     while True:
         numeros=input("ingrese: ")   
@@ -19,8 +20,8 @@ def resta():
         lista.append(float(numeros))
         resultado=lista[0]
         for num in lista[1: ]:
-            resultado -= num
-    print("La resta es: ", resultado)
-    opcion=input("Desea volver a restar? (s/n): ")
+            resultado *= num
+    print("La multiplicacion es: ", resultado)
+    opcion=input("Desea volver a multiplicar? (s/n): ")
     if opcion == "s":
-        resta()
+        multiplicacion()
